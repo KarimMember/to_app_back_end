@@ -116,3 +116,37 @@ html {
     transform: translateY(-2000px);
   }
 }
+/* Credit to https://codepen.io/michaelwyatt/pen/GYpobV*/
+html{
+  background: #222f3e;
+  display: block;
+  font-size: 16px;
+}
+
+button.spooky{
+ font-family: 'Montserrat', sans-serif;
+  background: none;
+  border: 2px solid;
+  font-size: 2em;
+  color: #fff;
+  vertical-align: middle;
+  padding: 0.5em 2em;
+  border-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='50' height='50'><defs><linearGradient id='redgradient'><stop offset='0' stop-color='#3498db'/><stop offset='0.362' stop-color='#9b59b6'/><stop offset='1' stop-color='#e74c3c'/></linearGradient></defs><g id='Layer_1'><path d='M0,0 L50,0 L50,50 L0,50 L0,0 z' fill='url(%23redgradient)' width='100%' height='100%'/></g></svg>") 10% stretch;
+  transition: 1.1s ease-in-out;
+}
+
+button:hover,
+button:active{
+  background-image: linear-gradient( to right, #3498db, #9b59b6, #e74c3c );
+  transform: scale(1.2);
+  
+}
+
+.wrapper{
+  display: block;
+  text-align: center;
+  height: 100%;
+  position: relative;
+  top: 200px;
+}
+
