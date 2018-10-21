@@ -1,5 +1,8 @@
-<h1><%=@todo_description%></h1>
-<h3>Todo #<%= params[:id] %></h3>
+<input type="checkbox">
+
+<h1><%=@todo.description%></h1>
+
+<h3>Todo #<%= @todo.id %></h3>
       <ul>
        <li>
            <input type="checkbox">
@@ -15,3 +18,5 @@
             </li>
     </ul>
     <a href="/todo/index">previous</a>
+    <button class="show"><a id="addbutton" href="/todo/index">previous</a></button>
+    <button class="show"><a id="addbutton" href="/todo/edit/<%= @todo.id%>">Edit</a></button>

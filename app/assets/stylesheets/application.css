@@ -150,3 +150,9 @@ button:active{
   top: 200px;
 }
 
+#new-todo-description {
+  height: 100px
+}
+#new-todo-due_date {
+  height: 100px
+}
